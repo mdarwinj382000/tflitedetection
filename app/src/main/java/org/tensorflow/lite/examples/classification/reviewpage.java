@@ -27,7 +27,7 @@ public class reviewpage extends AppCompatActivity {
     EditText ed1,ed2,ed3;
     FloatingActionButton fab;
     CardView card1,card2,card3;
-    TextView r1,r2,r3,n1,n2,n3;
+    TextView r1,r2,r3,n1,n2,n3,d1,d2,d3,p1,p2,p3;
     String[] nmset1 ={
             "AKSHAYAA.S",
             "ANITHA.D",
@@ -74,23 +74,38 @@ public class reviewpage extends AppCompatActivity {
         Random r=new Random();
         int randomnumber=r.nextInt(10);
         //review tag ==>>1------------------------------
+        p1=findViewById(R.id.profile1);
         n1=findViewById(R.id.author);
+        p1.setText(nmset1[randomnumber].substring(0,1));
         n1.setText(nmset1[randomnumber]);
         r1=findViewById(R.id.description);
         Temp=value.concat("_r1");
         r1.setText(getStringByIdName(Temp));
         //review tag ==>>2------------------------------
+        p2=findViewById(R.id.profile2);
         n2=findViewById(R.id.author2);
+        p2.setText(nmset2[randomnumber].substring(0,1));
         n2.setText(nmset2[randomnumber]);
         r2=findViewById(R.id.description2);
         Temp=value.concat("_r2");
         r2.setText(getStringByIdName(Temp));
         //review tag ==>>3------------------------------
+        p3=findViewById(R.id.profile3);
         n3=findViewById(R.id.author3);
+        p3.setText(nmset3[randomnumber].substring(0,1));
         n3.setText(nmset3[randomnumber]);
         r3=findViewById(R.id.description3);
         Temp=value.concat("_r3");
         r3.setText(getStringByIdName(Temp));
+        d1=findViewById(R.id.date);
+        Temp="2021" + " " + "JAN" + " " +(r.nextInt((31 - 1) + 1) + 1);
+        d1.setText(Temp);
+        d2=findViewById(R.id.date2);
+        Temp="2021" + " " + "JAN" + " " +(r.nextInt((31 - 1) + 1) + 1);
+        d2.setText(Temp);
+        d3=findViewById(R.id.date3);
+        Temp="2021" + " " + "JAN" + " " +(r.nextInt((31 - 1) + 1) + 1);
+        d3.setText(Temp);
         cmt1 = findViewById(R.id.cmt1);
         cmt2 = findViewById(R.id.cmt2);
         cmt3 = findViewById(R.id.cmt3);
@@ -117,8 +132,10 @@ public class reviewpage extends AppCompatActivity {
         //card animator-----------------------------------------------
         Animation animation1= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.swing_up_left);
         Animation animation2 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.swing_up_right);
+        Animation animation3 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_in_row);
+        card3.startAnimation(animation3);
+        card2.startAnimation(animation2);
         card1.startAnimation(animation1);
-        card3.startAnimation(animation2);
         //openning dialog activity..........................................
         fab.setOnClickListener(v -> {
             //intent to the new dialog box or activity

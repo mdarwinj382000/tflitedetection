@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:drawingCacheQuality="high"
-    android:layout_centerVertical="true"
     android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:drawingCacheQuality="high"
     android:orientation="vertical"
     tools:context=".reviewpage">
 
@@ -53,37 +52,39 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:orientation="horizontal">
 
-                                <androidx.cardview.widget.CardView
+                                <TextView
+                                    android:id="@+id/profile1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardCornerRadius="999dp">
-
-                                    <ImageView
-                                        android:id="@+id/imageView"
-                                        android:layout_width="50dp"
-                                        android:layout_height="50dp"
-                                        folding-cell:srcCompat="@drawable/logo1" />
-                                </androidx.cardview.widget.CardView>
+                                    android:background="@drawable/round_textview"
+                                    android:gravity="center"
+                                    android:text="N"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_gravity="center"
                                     android:orientation="vertical">
 
                                     <TextView
                                         android:id="@+id/author"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="POTATO"
+                                        android:text=""
                                         android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/date"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="22 AUG 2012"
+                                        android:text=""
                                         android:textStyle="italic" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -93,7 +94,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
-                                android:text="hertghertgerthertgherth" />
+                                android:text="" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -165,8 +166,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:visibility="gone"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:visibility="gone">
 
                                 <EditText
                                     android:id="@+id/edit1"
@@ -222,37 +223,39 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:orientation="horizontal">
 
-                                <androidx.cardview.widget.CardView
+                                <TextView
+                                    android:id="@+id/profile2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardCornerRadius="999dp">
-
-                                    <ImageView
-                                        android:id="@+id/imageView2"
-                                        android:layout_width="50dp"
-                                        android:layout_height="50dp"
-                                        folding-cell:srcCompat="@drawable/logo1" />
-                                </androidx.cardview.widget.CardView>
+                                    android:background="@drawable/round_textview"
+                                    android:gravity="center"
+                                    android:text="N"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_gravity="center"
                                     android:orientation="vertical">
 
                                     <TextView
                                         android:id="@+id/author2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="POTATO"
+                                        android:text=""
                                         android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/date2"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="22 AUG 2012"
+                                        android:text=""
                                         android:textStyle="italic" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -262,7 +265,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
-                                android:text="erthertgherthetr" />
+                                android:text="" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -334,8 +337,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:visibility="gone"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:visibility="gone">
 
                                 <EditText
                                     android:id="@+id/edit2"
@@ -388,37 +391,39 @@
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center"
                                 android:orientation="horizontal">
 
-                                <androidx.cardview.widget.CardView
+                                <TextView
+                                    android:id="@+id/profile3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    app:cardCornerRadius="999dp">
-
-                                    <ImageView
-                                        android:id="@+id/imageView3"
-                                        android:layout_width="50dp"
-                                        android:layout_height="50dp"
-                                        folding-cell:srcCompat="@drawable/logo1" />
-                                </androidx.cardview.widget.CardView>
+                                    android:background="@drawable/round_textview"
+                                    android:gravity="center"
+                                    android:text="N"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_gravity="center"
                                     android:orientation="vertical">
 
                                     <TextView
                                         android:id="@+id/author3"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="POTATO"
+                                        android:text=""
                                         android:textStyle="bold" />
 
                                     <TextView
                                         android:id="@+id/date3"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="22 AUG 2012"
+                                        android:text=""
                                         android:textStyle="italic" />
                                 </LinearLayout>
                             </LinearLayout>
@@ -428,7 +433,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
-                                android:text="erhtertherthertghertht" />
+                                android:text="" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -500,8 +505,8 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:gravity="end"
-                                android:visibility="gone"
-                                android:orientation="horizontal">
+                                android:orientation="horizontal"
+                                android:visibility="gone">
 
                                 <EditText
                                     android:id="@+id/edit3"
@@ -539,16 +544,18 @@
             </ScrollView>
 
         </androidx.cardview.widget.CardView>
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:backgroundTint="@color/purple_500"
-            android:src="@drawable/messenger"
             android:layout_gravity="bottom|end"
+            android:layout_margin="10dp"
+            android:contentDescription="questioning chat bot"
+            android:src="@drawable/messenger"
+            app:backgroundTint="@color/purple_500"
             app:elevation="6dp"
-            app:pressedTranslationZ="12dp"
-            android:contentDescription="questioning chat bot" />
+            app:pressedTranslationZ="12dp" />
 
     </LinearLayout>
 
