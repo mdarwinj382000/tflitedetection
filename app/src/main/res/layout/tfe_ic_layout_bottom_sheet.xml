@@ -253,9 +253,10 @@
 
         <Button
             android:id="@+id/reviewbutton"
-            android:layout_width="64dp"
+            android:layout_width="75dp"
             android:layout_height="23dp"
             android:layout_gravity="end"
+            android:backgroundTint="@color/white"
             android:onClick="review_page"
             android:textColor="#0000FF"
             android:padding="0dp"

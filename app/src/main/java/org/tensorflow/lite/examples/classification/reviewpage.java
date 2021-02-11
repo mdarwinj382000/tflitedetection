@@ -6,12 +6,14 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.MediaController;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,14 +22,19 @@ import com.like.OnLikeListener;
 
 import java.util.Random;
 
+import pl.droidsonroids.gif.GifDrawable;
+import pl.droidsonroids.gif.GifImageButton;
+
 public class reviewpage extends AppCompatActivity {
 
     LikeButton cmt1, cmt2, cmt3, send1, send2, send3,l1,dl1,l2,dl2,l3,dl3;
     LinearLayout edt1, edt2, edt3;
     EditText ed1,ed2,ed3;
-    FloatingActionButton fab;
+//    CardView fab;
     CardView card1,card2,card3;
+//    GifImageButton fab;
     TextView r1,r2,r3,n1,n2,n3,d1,d2,d3,p1,p2,p3;
+//    FloatingActionButton fab;
     String[] nmset1 ={
             "AKSHAYAA.S",
             "ANITHA.D",
@@ -127,8 +134,6 @@ public class reviewpage extends AppCompatActivity {
         edt1 = findViewById(R.id.editTextTextPersonName1);
         edt2 = findViewById(R.id.editTextTextPersonName2);
         edt3 = findViewById(R.id.editTextTextPersonName3);
-        fab=findViewById(R.id.fab);
-        fab.setColorFilter(Color.WHITE);
         //card animator-----------------------------------------------
         Animation animation1= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.swing_up_left);
         Animation animation2 = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.swing_up_right);
@@ -137,11 +142,14 @@ public class reviewpage extends AppCompatActivity {
         card2.startAnimation(animation2);
         card1.startAnimation(animation1);
         //openning dialog activity..........................................
-        fab.setOnClickListener(v -> {
-            //intent to the new dialog box or activity
-            Intent i=new Intent(this,startchat.class);
-            startActivity(i);
-        });
+//        fab.findViewById(R.id.fab);
+//        fab.setOnClickListener(v -> {
+//            //intent to the new dialog box or activity
+//            Intent i=new Intent(this,startchat.class);
+//            startActivity(i);
+//        });
+//        fab.findViewById(R.id.fab);
+//        fab.setOnClickListener(v ->{ Intent i=new Intent(this,startchat.class);startActivity(i);});
         //layout visibility.................................................
         cmt1.setOnLikeListener(new OnLikeListener() {
             @Override
@@ -329,5 +337,6 @@ public class reviewpage extends AppCompatActivity {
             return getString(R.string.problem_occured);
         }
 
-    }
+      }
+      public void startchat(View view){ Intent i=new Intent(this,startchat.class);startActivity(i);}
 }

@@ -93,7 +93,7 @@ public class startchat extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_startchat);
-    this.setFinishOnTouchOutside(false);
+//    this.setFinishOnTouchOutside(false);
     mContext = getApplicationContext();
 
     inputMessage = findViewById(R.id.message);
